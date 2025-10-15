@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +13,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 339 100% 70%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 45 100% 62%;
-    --secondary-foreground: 30 30% 15%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -34,9 +32,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 1rem;
-    --cookie-brown: 22 55% 31%;
-    --bright-green: 142 76% 46%;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -98,37 +94,8 @@
   * {
     @apply border-border;
   }
-}
-
-@layer utilities {
-  .cookie-gradient {
-    background: linear-gradient(135deg, #ff6b9d 0%, #ffd93d 50%, #ff6b9d 100%);
-  }
-
-  .building-gradient {
-    background: linear-gradient(180deg, #ffd93d 0%, #ffa500 100%);
-  }
-
-  .kingdom-bg {
-    background: linear-gradient(
-      to bottom,
-      #6bcbf7 0%,
-      #8fd3f4 50%,
-      #b8e994 100%
-    );
-  }
 
   body {
-    @apply bg-gradient-to-b from-sky-200 via-pink-100 to-yellow-100 text-foreground;
-    font-family: "Rubik", sans-serif;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Montserrat", sans-serif;
+    @apply bg-background text-foreground;
   }
 }
